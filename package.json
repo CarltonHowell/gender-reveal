@@ -2,12 +2,14 @@
   "name": "reveal",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://carltonhowell.github.io/gender-reveal",
   "dependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.10",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "cra-template-typescript": "1.2.0",
+    "gh-pages": "^6.3.0",
     "prettier": "^3.4.2",
     "react": "^19.0.0",
     "react-confetti": "^6.2.2",
@@ -21,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
