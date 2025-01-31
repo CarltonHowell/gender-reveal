@@ -4,6 +4,7 @@ import { IS_BOY } from "./constants";
 
 const Confetti = ({ isRevealed }: { isRevealed: boolean }) => {
   const colors = IS_BOY ? ["#78b3c8", "#2e606d"] : ["#f7b7a3", "#935469"];
+
   return (
     <ReactConfetti
       width={window.innerWidth}
