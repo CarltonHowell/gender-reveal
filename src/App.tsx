@@ -21,7 +21,7 @@ const StyledDiv = styled.div`
   align-items: center;
   height: 100dvh;
   width: 100vw;
-  background-image: url(/background.png);
+  background-image: url(./background.png);
   background-size: 100% 100%;
 `;
 
