@@ -58,7 +58,7 @@ const ScratchCanvas = ({ onRevealed, isRevealed }: ScratchProps) => {
         height={maxImageHeight}
         image={IMG}
         customCheckZone={customCheckZone}
-        finishPercent={70}
+        finishPercent={60}
         brushSize={15}
         onComplete={() => onRevealed?.()}
         customBrush={CUSTOM_BRUSH_PRESET}
@@ -82,11 +82,13 @@ const ScratchCanvas = ({ onRevealed, isRevealed }: ScratchProps) => {
           </>
         )}
 
-        <img
-          src={IS_BOY ? IMG_BOY : IMG_GIRL}
-          width={maxImageWidth}
-          height={maxImageHeight}
-          alt="reveal image"
+        <div
+          style={{
+            backgroundImage: `url(${IS_BOY ? IMG_BOY : IMG_GIRL})`,
+            backgroundSize: `${maxImageWidth}px ${maxImageHeight}px`,
+            width: maxImageWidth,
+            height: maxImageHeight,
+          }}
         />
       </ScratchCard>
     </div>
